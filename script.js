@@ -6,70 +6,58 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você acha correto a ausência dos professores nas aulas, assim como a diminuição de matérias?",
+        enunciado: "VOCÊ ACHA CORRETO A AUSENCIA DOS PROFESSORES NAS AULAS, ASSIM COMO A DIMINUIÇÃO DE MATÉRIA?",
         alternativas: [
             {
-                texto: "Sim, acho correto",
-                afirmacao: "É constatada que "
+                texto: "SIM, ACHO CORRETO!",
+                afirmacao: "É CONSTATADO QUE O ENSINO NO BRASIL "
             },
             {
-                texto: "Não,acho correto",
-                afirmacao: "O ensino no brasil"
+                texto: "NÃO ACHO CORRETO",
+                afirmacao: "TEM MUITO A SER MELHORADO,"
             }
         ]
     },
     {
-        enunciado: "Você acha que a falta de tecnologia, a falta de investimentos no meio escolar prejudica os alunos nos seus estudos?",
+        enunciado: "VOCÊ ACHA QUE A FALTA DE TECNOLOGIA E DE INVESTIMENTOS NO MEIO ESCOLA, PREJUDICA OS ALUNOS NOS ESTUDOS?",
         alternativas: [
             {
-                texto: "Sim,prejudica",
-                afirmacao: "Tem muito "
+                texto: "SIM ,PREJUDICA.",
+                afirmacao: "ATÉ PORQUE A BAIXA"
             },
             {
-                texto: "Não,prejudica",
-                afirmacao: "A ser melhorado"
+                texto: "NÃO, PREJUDICA.",
+                afirmacao: "QUALIDADE DO ENSINO"
             }
         ]
     },
     {
-        enunciado: "Você acha que a falta da participações dos pais no meio escolar pode prejudicar nos resultados dos alunos?",
+        enunciado: "VOCÊ ACHA QUE O DESINTERESSE DOS ALUNOS, ASSIM COMO A PARTICIPAÇÃO DOS PAIS NO MEIO ESCOLAR PODE SER UM PROBLEMA NA EDUCAÇÃO?",
         alternativas: [
             {
-                texto: "Sim,prejudica",
-                afirmacao: "até por que"
+                texto: "ACHO UM PROBLEMA.",
+                afirmacao: "ACABA PREJUDICANDO."
             },
             {
-                texto: "Não,prejudica",
-                afirmacao: "a baixa qualidade"
+                texto: "NÃO ACHO UM PROBLEMA.",
+                afirmacao: "MUITO OS ALUNOS."
             }
         ]
     },
     {
-        enunciado: "Você na sua opinião acha que poderia ter mais melhorias assim como o aumento de verbas para o meio escolar?",
+        enunciado: "VOCÊ NA SUA OPINIÃO, ACHA QUE PODE TER MELHORIAS NO MEIO ESCOLAR?",
         alternativas: [
             {
-                texto: "Sim,acho",
-                afirmacao: "do ensino,"
+                texto: "SIM, PODERIA.",
+                afirmacao: "A DESISTIREM."
             },
             {
-                texto: "Não,acho",
-                afirmacao: "Acaba prejudicando"
-        ]
-
-            },
-            
-    {
-        enunciado: "Você na sua opinião você acha que poderia ter melhorias no meio escolar?",
-        alternativas: [
-            {
-                texto: "Sim poderia",
-                afirmacao: "Muito os alunos "
-            },
-            {
-                texto: "Não poderia",
-                afirmacao: "a desistirem de terminarem os estudos."
+                texto: "NÃO, PODERIA.",
+                afirmacao: "DE TERMINAREM OS ESTUDOS."
+            }
         ]
     },
+    
 ];
 
 
@@ -98,8 +86,7 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    historiaFinal;
     atual++;
     mostraPergunta();
 }
@@ -107,7 +94,7 @@ function respostaSelecionada(opcaoSelecionada) {
 function mostraResultado() {
     caixaPerguntas.textContent = "Em 2049...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = " É CONSTATADO QUE O ENSINO NO BRASIL TEM MUITO A SER MELHORADO ATÉ PORQUE A BAIXA QUALIDADE DO ENSINO, ACABA PREJUDICANDO MUITOS ALUNODS DE DESISTIREM DE TERMINAREM OS";
 }
 
 mostraPergunta();
